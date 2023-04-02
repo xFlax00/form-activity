@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D980FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form section{
+    margin: 2rem;
+}
+
+form section h1{
+    margin-bottom: 1rem;
+}
+
+.inp{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.inp input{
+    font-size: inherit;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.inp input::placeholder{
+    font-size: 1.1rem;
+}

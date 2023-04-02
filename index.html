@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Crie um formulário para contato com os seguintes campos:
+Nome
+Email
+Senha
+Data de Nascimento
+Sexo [ M, F, Outro ]
+Endereço - CEP
+Endereço - logradouro
+Endereço - número
+Endereço - bairro
+Endereço - cidade
+Endereço - estado (UF)
+Botão para enviar e outro para limpar o formulário
+
+ -->
+    <form>
+        <section class="personal">
+            <h1>Informações pessoais</h1>
+            <div class="inp">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Nome">
+            </div>
+            <div class="inp">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="inp">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" placeholder="Senha">
+            </div>
+            <div class="inp">
+                <label for="date">Data de nascimento:</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="inp">
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" id="M" value="Masculino" checked><label for="M"> Masculino</label>
+                <input type="radio" name="sexo" id="F" value="Feminino"><label for="F"> Feminino</label>
+                <input type="radio" name="sexo" id="O" value="Outro"><label for="O"> Outro</label>
+            </div>
+        </section>
+        <section class="location">
+            <h1>Endereço</h1>
+            <div class="inp">
+                <label for="cep">CEP:</label>
+                <input type="number" name="CEP" id="cep">  
+            </div>
+            <div class="inp">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" name="logradouro" id="logradouro">  
+            </div>
+            <div class="inp">
+                <label for="numero">Número:</label>
+                <input type="number" name="numero" id="numero">  
+            </div>
+            <div class="inp">
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro">  
+            </div>
+            <div class="inp">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade">  
+            </div>
+            <div class="inp">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado">  
+            </div>
+            <div class="btns">
+                <button>Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </section>
+    </form>
+</body>
+</html>
