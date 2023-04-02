@@ -4,27 +4,32 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #D980FA;
+    font-family: Helvetica, sans-serif;
+    background-color: #9c88ff;
+    background-color: #786fa6;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 form{
-    width: 70%;
-    height: 70%;
+    width: max-content;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
+    padding: 2rem 0rem;
 }
 
 form section{
     margin: 2rem;
+    margin-bottom: 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px 2px rgba(0,0,0,0.39);
 }
 
 form section h1{
@@ -32,17 +37,38 @@ form section h1{
 }
 
 .inp{
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-size: 1.2rem;
-    text-align: justify;
+    text-align: end;
 }
 
 .inp input{
     font-size: inherit;
     border-radius: 3px;
-    padding-left: 10px;
+    padding: 8px;
+    padding-left: 5px;
 }
 
 .inp input::placeholder{
     font-size: 1.1rem;
+}
+
+.btns{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+button{
+    margin: 0 10px;
+    padding: .6rem 1.2rem;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #786fa6;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+button:hover{
+    transform: scale(1.1);
 }

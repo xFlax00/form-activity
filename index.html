@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Crie um formulário para contato com os seguintes campos:
-Nome
-Email
-Senha
-Data de Nascimento
-Sexo [ M, F, Outro ]
-Endereço - CEP
-Endereço - logradouro
-Endereço - número
-Endereço - bairro
-Endereço - cidade
-Endereço - estado (UF)
-Botão para enviar e outro para limpar o formulário
-
- -->
     <form>
         <section class="personal">
             <h1>Informações pessoais</h1>
@@ -53,33 +38,33 @@ Botão para enviar e outro para limpar o formulário
             <h1>Endereço</h1>
             <div class="inp">
                 <label for="cep">CEP:</label>
-                <input type="number" name="CEP" id="cep">  
+                <input type="number" name="CEP" id="cep" placeholder="CEP">  
             </div>
             <div class="inp">
                 <label for="logradouro">Logradouro:</label>
-                <input type="text" name="logradouro" id="logradouro">  
+                <input type="text" name="logradouro" id="logradouro" placeholder="Logradouro">  
             </div>
             <div class="inp">
                 <label for="numero">Número:</label>
-                <input type="number" name="numero" id="numero">  
+                <input type="number" name="numero" id="numero" placeholder="Número">  
             </div>
             <div class="inp">
                 <label for="bairro">Bairro:</label>
-                <input type="text" name="bairro" id="bairro">  
+                <input type="text" name="bairro" id="bairro" placeholder="Bairro">  
             </div>
             <div class="inp">
                 <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade" id="cidade">  
+                <input type="text" name="cidade" id="cidade" placeholder="Cidade">  
             </div>
             <div class="inp">
                 <label for="estado">Estado:</label>
-                <input type="text" name="estado" id="estado">  
-            </div>
-            <div class="btns">
-                <button>Enviar</button>
-                <button type="reset">Limpar</button>
+                <input type="text" name="estado" id="estado" placeholder="Estado">  
             </div>
         </section>
+        <div class="btns">
+            <button>Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
     </form>
 </body>
 </html>
